@@ -1,0 +1,68 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+char *pos(char *o,char b){
+     char *r;
+     r=NULL;
+     while (*o !='\0') {
+        if (*o==b) {
+           r=o;
+        }
+        *o++;
+     }
+     return r;
+}
+
+bool tiene(char *o,char b){
+     if (pos(o,b)!=NULL){
+        return true;
+     } else {
+        return false;
+     }
+}
+
+void copystr(char *o,char*d){
+     while (*o !='\0') {
+           *d=*o;
+           o++;
+           d++;
+     }
+     *d='\0';
+}
+
+int main(int argc, char *argv[])
+{
+ char p[10]="hola pepe";
+ char *q;
+ q=(char *)malloc(sizeof(char)*20);
+//
+ char *r="chau raul del aula";
+ 
+ printf("%s en p \n",p);
+ printf("%s en q \n",q);
+ printf("%s en r \n",r);
+/*
+ copystr(p,q);
+ *(q+5)='G';
+ *(q+6)='\0';
+ 
+ printf("%s en p \n",p);
+ printf("%s en q \n",q);
+ printf("%s en r \n",r);
+*/ 
+
+ system("PAUSE");
+ char cual='p';
+ int donde;
+ if (tiene(p,cual)){
+     donde=pos(p,cual)-p;
+     printf("la pos de %c en p es%d\n",cual,donde);
+//     printf("en p esta %c\n",cual);
+ } else {
+     printf("en p no esta %c\n",cual);
+ }
+
+ system("PAUSE");
+ free(q);
+ return 0;
+}

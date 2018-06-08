@@ -1,0 +1,15 @@
+Resolver los siguientes problemas
+
+a) Determinar la mayor letra de un string
+b) dado un string devolver el string invertido
+c)determinar si un string es palindrome
+
+realizar una funcion por cada item y llamarla desde el main del programa
+
+
+
+
+
+subir el archivo de codigo fuente en forma individual 
+Disponible en:	 Thursday, 14 de March de 2013, 16:20
+Fecha de entrega:	 Thursday, 21 de March de 2013, 16:20

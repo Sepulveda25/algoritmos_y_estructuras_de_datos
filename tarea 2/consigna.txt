@@ -1,0 +1,9 @@
+Debera programar una funcion de concatenacion de dos strings en forma recursiva final y la iterativa derivada a partir de la recursiva.
+
+La funcion original toma dos char pointers y devuelve un tercero con la concatenacion de los strings de ambos.
+La signatura de la funcion original es:
+
+char *concat(char *uno, char *dos)
+
+No puede usar la funcion strlen para determinar la longitud de los strings.
+La funcion original debe llamar a una recursiva a la cola. La recursiva a la cola no puede llamar a otra recursiva.

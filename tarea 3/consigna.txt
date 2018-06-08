@@ -1,0 +1,11 @@
+Procesamiento de datos en lista.
+
+Deberá procesar los datos de una lista que contiene los resultados de exámenes de alumnos.
+En la lista se almacenan los datos del nombre del alumno y de la nota de un examen. Los datos de esta lista deben leerse desde un archivo de texto con el formato siguiente:
+
+Nombre del alumno1, Nota1
+Nombre del alumno2, Nota2
+
+es decir, cada dato ocupa un solo renglon y la coma separa el nombre del número.
+
+Debera generar un algoritmo recursivo a la cola para procesar los datos una vez leidos desde el archivo. Obtener al finalizar, el promedio de las notas, la cantidad de reprobados y un listado de los alumnos que tienen nota 7 o superior.

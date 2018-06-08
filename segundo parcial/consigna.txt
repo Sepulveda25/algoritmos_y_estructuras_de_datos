@@ -1,0 +1,7 @@
+Implemente un B-Tree de grado 2, es decir que cada nodo contiene 4 datos y 5 punteros. La implementacion debe realizarse sobre un archivo y no sobre memoria.
+Es decir, si tenemos 10 nodos, los mismos estaran numerados de 1 a 10. Estos numeros representan el oden en que el nodo esta grabado dentro del archivo.
+A medida que se insertan datos, los mismos quedan registrados en el correspondiente nodo en el archivo. La construccion no se hace sobre memoria. 
+En memoria solo existe un nodo del arbol a los fines de leer o grabar en el archivo. 
+La construccion se hace sobre el archivo.(tip: use las funciones de manejo de archivo, fopen, fclose, fseek, fread y fwrite).
+Debera implementar funciones de insercion, busqueda y modificacion en el arbol.
+Presente un informe de como trabaja este tipo de arboles.

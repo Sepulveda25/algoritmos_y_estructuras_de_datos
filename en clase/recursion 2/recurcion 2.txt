@@ -1,0 +1,57 @@
+#include <iostream>
+#include <sstream>
+#include <math.h>
+
+using namespace std;
+
+int b2caux(char *b,int r,int p, int l){
+    if (p==l){
+       return r;
+    } else {if (*b=='\0') {
+               return b2caux(--b,r,0,l);
+            } else { if (p<0) {
+                      return b2caux(++b,r,p,l+1);
+                     } else {
+                      return b2caux(--b, r+((*b)-'0')*pow(2,p), p+1, l);
+                     }
+            }         
+    }
+}
+
+int b2cit(char *b){
+    int r;
+    int p;
+    int l;
+    r=0;
+    p=-1;
+    l=0;
+    while (p!=l) {
+       if (*b=='\0') {
+          b=b-1;
+          p=0;
+       } else {
+           if (p<0) {
+               b=b+1;
+               l=l+1;
+           } else {
+               r=r+((*b)-'0')*pow(2,p);
+               b=b-1;
+               p=p+1;
+           }
+       }
+    }
+    return r;
+}
+
+int b2c(char *b){
+    return b2caux(b,0,-1,0);
+}
+
+int main(int argc, char** argv)
+{
+    char *b="1111000111001111";
+    cout<<"binario:"<<b<<" decimal rec:"<<b2c(b)<<endl;
+    cout<<"binario:"<<b<<" decimal ite:"<<b2cit(b)<<endl;
+    system("PAUSE");
+    
+}
